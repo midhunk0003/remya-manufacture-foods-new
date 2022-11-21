@@ -75,8 +75,8 @@ body{
 
 
 
-
-.imagesgall{
+/* old image photo gallery*/
+/* .imagesgall{
     position: relative;
     min-height: 100vh;
     background:rgb(3, 3, 3);
@@ -105,14 +105,14 @@ body{
     width: 350px;
     border-radius: 10px;
     /* border: 10px solid white; */
-    box-shadow: 0 5px 15px rgba(0, 0, 0,.1);
+/*     box-shadow: 0 5px 15px rgba(0, 0, 0,.1);
     overflow: hidden;
     cursor: pointer;
     background-color:   rgb(228, 135, 15)!important;
 
-}
+} */
 
-.image .heading{
+/* .image .heading{
     position: absolute;
     text-align: center;
     opacity: 0.7;
@@ -122,8 +122,8 @@ body{
     background-color: #fff;
     padding: 5px;
     width: auto;
-}
-.image .heading2{
+} */
+/* .image .heading2{
     position: absolute;
     text-align: center;
     opacity: 0.7;
@@ -133,17 +133,18 @@ body{
     background-color: #fff;
     padding: 5px;
     width: auto;
-}
-.imagesgall .image-container .image img{
+} */
+/* .imagesgall .image-container .image img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     transition: .2s linear;
-}
+} */
 
-.imagesgall .image-container .image:hover img{
+/* .imagesgall .image-container .image:hover img{
     transform: scale(1.1);
-}
+} */
+/* old image photo gallery end*/
 
 
 .imagesgall .popup-image{
@@ -180,8 +181,21 @@ body{
 }
 
 @media (max-width:900px) {
+    
+    
+     .imagesgall .popup-image{
+        position: fixed;
+        top: 14px!important; left: 0;
+        background: rgba(0, 0, 0,.9);
+        height: 100%;
+        width: 100%;
+        z-index: 100;
+        display: none;
+    }
+    
     .imagesgall .popup-image img{
-        width: 95%;
+       width: 67%!important;
+        
     }
     #carouselExampleControls{
         padding-top:1px!important;
@@ -199,7 +213,7 @@ body{
     .imgfss{
         margin-left: 128px;
     }
-    .image .heading {
+/*     .image .heading {
         position: absolute;
         text-align: center;
         opacity: 0.7;
@@ -209,8 +223,8 @@ body{
         background-color: #fff;
         padding: 5px;
         width: auto;
-    }
-    .image .heading2 {
+    } */
+/*     .image .heading2 {
         position: absolute;
         text-align: center;
         opacity: 0.7;
@@ -220,7 +234,23 @@ body{
         background-color: #fff;
         padding: 5px;
         width: auto;
+    } */
+    
+     /* photo gallery new */
+    .image12345 .heading2 {
+        border-radius: 19px!important;
+        margin: 110px!important;
+        position: absolute;
+        text-align: center;
+        opacity: 0.7;
+        border-radius: inherit;
+        margin-left: 87px;
+        margin-top: 107px;
+        background-color:#db9b0f;
+        padding: 5px;
+        width: auto;
     }
+     /* photo gallery new */
     
 }
 
@@ -260,3 +290,90 @@ body{
 #btnScrollTop:active{
     background:  rgb(230, 149, 0)!important;;
 }
+
+
+
+/* photo gallary css */
+
+.imagecontainer h1{
+    font-size: 40px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 800;
+    padding: 15px;
+    color: rgb(228, 135, 15)!important;
+    text-align: center;
+    text-transform: uppercase;
+}
+.image12345 {
+    /* border: 2px solid #fff; */
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image12345 img {
+    border-radius: 17px!important;
+    width: 100%;
+    height: 300;
+    transition: .2s linear;
+  }
+  
+  .image12345:hover  img {
+    border-radius: 12px;
+    transform: scale(1.1);
+      cursor: pointer;
+  }
+
+  .image12345 .heading2 {
+    border-radius: 19px!important;
+    position: absolute;
+    text-align: center;
+    opacity: 0.7;
+    border-radius: inherit;
+    margin-left: 87px;
+    margin-top: 107px;
+    background-color:#e4870f;
+    padding: 5px;
+    width: auto;
+}
+.image12345 .heading2 h4{
+    color: rgb(0, 0, 0)!important;
+    font-weight: 900;
+}
+
+
+
+
+.imagesgall .popup-image{
+    position: fixed;
+    top: 80px; left: 0;
+    background: rgba(0, 0, 0,.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+
+
+}
+
+.imagesgall .popup-image span{
+
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 40px;
+    font-weight: normal;
+    color: rgb(230, 149, 0);
+   cursor: pointer;
+   z-index: 100;
+}
+.imagesgall .popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    border: 5px solid #fff;
+    border-radius: 10px;
+    width: 750px;
+    object-fit: cover;
+
+}
+
+/* photo gallary css end */ 
